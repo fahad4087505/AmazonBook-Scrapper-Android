@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
         val pyt = Python.getInstance()
         val bookData = pyt.getModule("data_collection").callAttr("scrape_book_data", bookUrl)
         Thread.sleep(7000)
-        Log.e("myAndroidClass",bookData.toString())
+        Log.e("myBookData",bookData.toString())
     }
 
     private fun fetchAmazonDataResponseUsingBookUrlChromeDriver(){
